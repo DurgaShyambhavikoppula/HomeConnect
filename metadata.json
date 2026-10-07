@@ -1,0 +1,8 @@
+{
+  "name": "HomeConnect",
+  "description": "A comprehensive House Rent booking and listing platform for Renters, Owners, and Admins.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

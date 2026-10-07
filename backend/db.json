@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Admin HomeConnect",
+      "email": "admin@homeconnect.com",
+      "passwordHash": "admin123",
+      "phone": "+1 (555) 019-9000",
+      "type": "admin",
+      "approved": true
+    },
+    {
+      "id": "usr_renter",
+      "name": "John Doe",
+      "email": "renter@homeconnect.com",
+      "passwordHash": "renter123",
+      "phone": "+1 (555) 012-3456",
+      "type": "renter",
+      "approved": true
+    },
+    {
+      "id": "usr_owner1",
+      "name": "David Smith",
+      "email": "owner@homeconnect.com",
+      "passwordHash": "owner123",
+      "phone": "+1 (555) 098-7654",
+      "type": "owner",
+      "approved": true
+    },
+    {
+      "id": "usr_owner2",
+      "name": "Emma Watson",
+      "email": "owner2@homeconnect.com",
+      "passwordHash": "owner123",
+      "phone": "+1 (555) 044-8899",
+      "type": "owner",
+      "approved": false
+    },
+    {
+      "id": "usr_1790485537089",
+      "name": "Samu",
+      "email": "durgashyambhavikoppula@gmail.com",
+      "passwordHash": "Samu@2006",
+      "phone": "8185873329",
+      "type": "renter",
+      "approved": true
+    },
+    {
+      "id": "usr_1790487982342",
+      "name": "Srujana",
+      "email": "jageerisrujana@gmail.com",
+      "passwordHash": "Srujana@123",
+      "phone": "7842894144",
+      "type": "renter",
+      "approved": true
+    }
+  ],
+  "properties": [
+    {
+      "id": "prop_1",
+      "ownerId": "usr_owner1",
+      "ownerName": "David Smith",
+      "ownerContact": "+1 (555) 098-7654",
+      "propertyType": "Flat",
+      "propertyAdType": "For Rent",
+      "propertyAddress": "3 BHK Premium Flat, Indiranagar, Bangalore - 560038",
+      "propertyAmt": 25000,
+      "propertyImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60",
+      "furnishingStatus": "Furnished",
+      "additionalInfo": "Spacious BHK with modular kitchen, close to metro station. Includes backup power and 24/7 security.",
+      "isAvailable": true
+    },
+    {
+      "id": "prop_2",
+      "ownerId": "usr_owner1",
+      "ownerName": "David Smith",
+      "ownerContact": "+1 (555) 098-7654",
+      "propertyType": "House",
+      "propertyAdType": "For Rent",
+      "propertyAddress": "Villa Green Oasis, Koramangala, Bangalore - 560034",
+      "propertyAmt": 45000,
+      "propertyImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=60",
+      "furnishingStatus": "Semi-Furnished",
+      "additionalInfo": "Independent duplex house with garden, private parking, and high-speed fiber internet ready.",
+      "isAvailable": true
+    },
+    {
+      "id": "prop_3",
+      "ownerId": "usr_owner1",
+      "ownerName": "David Smith",
+      "ownerContact": "+1 (555) 098-7654",
+      "propertyType": "Loft",
+      "propertyAdType": "For Rent",
+      "propertyAddress": "Modern Studio Loft, Whitefield, Bangalore - 560066",
+      "propertyAmt": 18000,
+      "propertyImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=60",
+      "furnishingStatus": "Furnished",
+      "additionalInfo": "Chic studio flat designed for IT professionals. Minimalistic wooden theme, pet-friendly and well-lit.",
+      "isAvailable": false
+    },
+    {
+      "id": "prop_1790487912541",
+      "ownerId": "usr_owner1",
+      "ownerName": "David Smith",
+      "ownerContact": "8185873329",
+      "propertyType": "Flat",
+      "propertyAdType": "For Rent",
+      "propertyAddress": "near vijayawada",
+      "propertyAmt": 20000,
+      "propertyImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz_w8fKHxZamo-5qPE2-HtFoIW2zDg4-81GVFnPxaEAparjEuLwwBav0&s=10",
+      "furnishingStatus": "Furnished",
+      "additionalInfo": "parking, wifi",
+      "isAvailable": false
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bkg_1",
+      "propertyId": "prop_1",
+      "propertyTitle": "3 BHK Premium Flat, Indiranagar",
+      "ownerId": "usr_owner1",
+      "userId": "usr_renter",
+      "userName": "John Doe",
+      "phone": "+1 (555) 012-3456",
+      "bookingStatus": "confirmed",
+      "bookingDate": "2026-06-29"
+    },
+    {
+      "id": "bkg_1790485904538",
+      "propertyId": "prop_3",
+      "propertyTitle": "Modern Studio Loft",
+      "ownerId": "usr_owner1",
+      "userId": "usr_1790485537089",
+      "userName": "Samu",
+      "phone": "8185873329",
+      "bookingStatus": "confirmed",
+      "bookingDate": "2026-09-27",
+      "visitDate": "2026-09-27",
+      "message": "Hi David Smith, I’m interested in renting your flat listed for ₹18,000 per month. I would like to know more about the property and its availability. Please let me know if we can discuss the details.\n Thank you!\n"
+    },
+    {
+      "id": "bkg_1790487478718",
+      "propertyId": "prop_1",
+      "propertyTitle": "3 BHK Premium Flat",
+      "ownerId": "usr_owner1",
+      "userId": "usr_renter",
+      "userName": "sam",
+      "phone": "8185873329",
+      "bookingStatus": "cancelled",
+      "bookingDate": "2026-09-27",
+      "visitDate": "2026-09-27",
+      "message": "hi im interested in this flat"
+    },
+    {
+      "id": "bkg_1790488138209",
+      "propertyId": "prop_1790487912541",
+      "propertyTitle": "near vijayawada",
+      "ownerId": "usr_owner1",
+      "userId": "usr_1790487982342",
+      "userName": "Srujana",
+      "phone": "7823456789",
+      "bookingStatus": "confirmed",
+      "bookingDate": "2026-09-27",
+      "visitDate": "2026-09-27",
+      "message": "hi is this still available?"
+    }
+  ]
+}

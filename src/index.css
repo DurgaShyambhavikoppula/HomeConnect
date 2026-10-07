@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #07111f; font-family: "DM Sans", sans-serif; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #7c5cff; color: white; }
+
+.app-grid { background-image: linear-gradient(rgba(124,92,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(124,92,255,.035) 1px, transparent 1px); background-size: 42px 42px; }
+.glass { background: rgba(15, 27, 46, .72); backdrop-filter: blur(18px); border: 1px solid rgba(148,163,184,.13); }
+.card-glow { box-shadow: 0 20px 60px rgba(0,0,0,.24), 0 0 0 1px rgba(124,92,255,.05); }
+.hero-glow { background: radial-gradient(circle at 20% 20%, rgba(124,92,255,.22), transparent 34%), radial-gradient(circle at 80% 10%, rgba(34,211,238,.12), transparent 28%); }
+
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
+.float { animation: float 5s ease-in-out infinite; }
+
+.scrollbar::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollbar::-webkit-scrollbar-track { background: #091322; }
+.scrollbar::-webkit-scrollbar-thumb { background: #243550; border-radius: 999px; }
+
+input:focus, select:focus, textarea:focus { outline: none; box-shadow: 0 0 0 3px rgba(124,92,255,.12); border-color: rgba(124,92,255,.8) !important; }
